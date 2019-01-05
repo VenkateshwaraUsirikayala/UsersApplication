@@ -22,6 +22,11 @@ public class UsersController {
 	public Iterable<User> getUsers() {
 		return usersService.getUsers();
 	}
+	
+	@GetMapping("test")
+	public String test() {
+		return "test";
+	}
 
 	@PostMapping("createuser")
 	public User createUser(@RequestBody User user) {
