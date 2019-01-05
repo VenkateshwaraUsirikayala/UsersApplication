@@ -27,11 +27,6 @@ public class UsersController {
 	public String test() {
 		return "test";
 	}
-	
-	@GetMapping("test1")
-	public String test1() {
-		return "test1";
-	}
 
 	@PostMapping("createuser")
 	public User createUser(@RequestBody User user) {
